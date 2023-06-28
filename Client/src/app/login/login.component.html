@@ -1,0 +1,29 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<div class="container login-container ">
+            <div class="row">
+                <div class="col-md-6 login-form-1 bg-white">
+                    <h3>Login</h3>
+                    <form (ngSubmit)="signin()">
+                        <div class="form-group">
+                            <input type="text" id="username" name="username" [(ngModel)]="user.username" class="form-control" placeholder="Your Username" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="password" name="password" [(ngModel)]="user.password" class="form-control" placeholder="Your Password" required  />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btnSubmit" value="Login" />
+                        </div>
+                        <div class="form-group">
+                            <a href="#" class="ForgetPwd">Forget Password?</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6 login-form-2 loginImg ">
+
+                </div>
+            </div>
+        </div>

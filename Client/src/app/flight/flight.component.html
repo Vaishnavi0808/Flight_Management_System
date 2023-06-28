@@ -1,0 +1,133 @@
+<div class="container-fluid bg-image">
+  <div class="mx-5 pt-5">
+
+    
+    <!-- <div class="container">
+      <p>{{ FlightData['from'] }}</p>
+      <p>{{ FlightData['to'] }}</p>
+      <p>{{ FlightData['date'] }}</p>
+    </div> -->
+
+    <div class="row justify-content-start">
+      <div class="col-sm">
+        <div class="mb-2">
+          <label id="origin-label" for="origin-input" class="form-label" style="color: white; font-size:20px; font-weight: bold;">From</label>
+          <span class="input-group-text" style="width: 400px;">
+            <i class="bi-pin-map"></i>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ FlightData['from'] }}
+          </span>
+          <div class="input-group"></div>
+        </div>
+      </div>
+
+      <div class="col-sm">
+        <div class="mb-2">
+          <label id="origin-label" for="origin-input" class="form-label" style="color: white; font-size:20px; font-weight: bold;">To</label>
+          <span class="input-group-text" style="width: 400px;">
+            <i class="bi-pin-map-fill"></i>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ FlightData['to'] }}
+          </span>
+          <div class="input-group" ></div>
+        </div>
+      </div>
+
+      <div class="col-sm">
+        <div class="mb-2">
+          <label id="origin-label" for="origin-input" class="form-label" style="color: white; font-size:22px; font-weight: bold;">Date</label>
+          <span class="input-group-text" style="width: 250px;">
+            <i class="bi bi-calendar-date"></i>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ FlightData['date'] }}
+          </span>
+          <div class="input-group"></div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <!-- <ul *ngFor="let flight of flights">
+    <li>{{ flight.flightNumber }}</li>
+    <li>{{ flight.departureTime }}</li>
+    <li>{{ flight.arrivalTime }}</li>
+    <li>{{ flight.airline }}</li>
+    <li>{{ flight.status }}</li>
+  </ul> -->
+
+  <div class="row">
+    <div class="col-4" *ngFor="let flight of flights">
+      <div class="card mb-3">
+        <div class="card-header">
+          Flight Number: {{ flight.flightNumber }}
+        </div>
+        <div class="card-body">
+          <p>Departure Time: {{ flight.departureTime }}</p>
+          <p>Arrival Time: {{ flight.arrivalTime }}</p>
+          <p>Airline: {{ flight.airline }}</p>
+          <p>Status: {{ flight.status }}</p>
+          <p>Fare: {{ flight.fare }}</p>
+        </div>
+        <div class="card-footer">
+          <a href="#" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <br>
+    <br>
+    <!-- <div class="card">
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th class="text-center">
+                  Flight Number
+                </th>
+                <th class="text-center">
+                  Departure Time
+                </th>
+                <th class="text-center">
+                  Arrival Time
+                </th>
+                <th class="text-center">
+                  Airline
+                </th>
+                <th class="text-center">
+                  Status
+                </th>
+                <th class="text-center">
+                  Book Tickets
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let flight of flights">
+                <td class="text-center">
+                  {{ flight.flightNumber }}
+                </td>
+                <td class="text-center">
+                  {{ flight.departureTime }}
+                </td>
+                <td class="text-center">
+                  {{ flight.arrivalTime }}
+                </td>
+                <td class="text-center">
+                  {{ flight.airline }}
+                </td>
+                <td class="text-center">
+                  {{ flight.status }}
+                </td>
+                <td class="text-center">
+                  <a href="#" class="link-primary">Book Now</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</div>

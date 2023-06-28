@@ -1,0 +1,46 @@
+<div class="container-fluid bg-image">
+  <div class="mx-5 pt-5">
+    <div class="h4 text-center text-white">Welcome to Online Flight Booking System</div>
+    <div class="row align-items-center mt-5">
+      <div class="col-4">
+        <div class="card">
+          <form (ngSubmit) = "onSubmit()">
+            <div class="card-body">
+              <div class="d-flex justify-content-center mt-3">
+                <p class="h6">Flight Search</p>
+              </div>
+              <div class="form-group">
+                <label for="from">From</label>
+                <input type="text" name="from" [(ngModel)]="data.from" list="cities" class="form-control"
+                  placeholder="Enter your place" />
+                <datalist id="cities">
+                  <option *ngFor="let city of cities" value="{{city}}">
+                </datalist>
+              </div>
+
+              <div class="form-group">
+                <label for="to">To</label>
+                <input type="text" name="to" [(ngModel)]="data.to" list="cities" class="form-control"
+                  placeholder="Enter your place" />
+                <datalist id="cities">
+                  <option *ngFor="let city of cities" value="{{city}}">
+                </datalist>
+              </div>
+
+              <div class="form-group col-md align-items-start flex-column">
+                <label for="date">Date</label>
+                <input type="date" name="date" [(ngModel)]="data.date" class="form-control" placeholder="Date"
+                  required />
+              </div>
+
+              <div class="d-flex justify-content-center mt-3">
+                <button type="submit" class="btn btn-outline-primary btn-sm">Search</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

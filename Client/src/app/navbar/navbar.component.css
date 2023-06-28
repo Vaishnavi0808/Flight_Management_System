@@ -1,0 +1,43 @@
+.nav{
+    background-color: white;
+    /* display:flexbox; */
+    justify-content: space-between;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.nav img {
+    float: left;
+    width: 45px;
+    height: 45px;
+    margin-top: 5px;
+    background: #555;
+  }
+
+.nav h1{
+    color: black;
+    /* margin: 5px; */
+    font-size: 27px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    display: inline;
+    font-weight: bold;
+}
+
+.nav ul{
+    display: inline-flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li{
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.nav li a{
+    text-decoration: none;
+    color: black;
+}

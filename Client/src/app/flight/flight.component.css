@@ -1,0 +1,7 @@
+.bg-image {
+  background-image: url('../../assets/background5.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  max-width: 500vh;
+}
